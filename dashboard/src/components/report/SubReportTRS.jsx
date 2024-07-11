@@ -47,7 +47,7 @@ const SubReportTRS = () => {
         series={[
           { dataKey: "FPE", label: "Forward P/E" },
           { dataKey: "PEG", label: "PEG Ratio" },
-          { dataKey: "DY", label: "Dividend yeild (%)" },
+          { dataKey: "DY", label: "Yeild (%)" },
         ]}
         height={400}
       />
