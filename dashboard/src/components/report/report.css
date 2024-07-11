@@ -1,0 +1,130 @@
+.report{
+    padding: 0 40px;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+
+    @media screen and (max-width:480px) {
+        padding: 0 20px;
+        height: calc(100vh - 120px);
+    }
+
+    @media screen and (min-width:481px) and (max-width:950px){
+        padding: 0 20px;
+        height: calc(100vh - 120px);
+    }
+}
+
+.cards{
+    flex: 1;
+    /* width: 50% !important; */
+    background-color: #212953 !important;
+    border-radius: 15px !important;
+    scale: 0.97;
+    transition: all 0.3s ease-in-out;
+}
+
+.cards:hover{
+    box-shadow: -4px 7px 14px -3px rgba(184,184,184,1) !important; 
+}
+
+.css-1qvr50w-MuiTypography-root{
+    @media only screen and (min-width: 951px) and (max-width:1200px){
+        font-size: 10px !important;
+    }
+} 
+
+.cardTitle{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.cardContent{
+    color: whitesmoke ;
+}
+
+.report-summary{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+
+    @media screen and (max-width:480px) {
+        margin: 0;
+    }
+
+    @media screen and (min-width:481px) and (max-width:950px){
+        margin: 0;
+    }
+}
+
+/* .report-summary > section > h2{
+    text-align: center;
+    width: 100%;
+}    */
+
+.report-section{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+
+    @media screen and (max-width:480px) {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    @media screen and (min-width:481px) and (max-width:950px){
+        flex-direction: column;
+        justify-content: center;
+
+    } 
+}
+
+.sub-section-1{
+    width: 100%;
+    scale: 0.9;
+    @media screen and (max-width:480px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width:481px) and (max-width:950px){
+        
+        width: 100%;
+    }
+}
+
+
+.MuiChartsLegend-series > text{
+    fill: whitesmoke !important;
+    
+}
+
+.MuiChartsAxis-label > text{
+    fill: whitesmoke !important;
+}
+
+@media screen and (max-width:480px){
+
+    section > h2{
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+    }
+
+    section > p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:950px){
+    section > h2{
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        
+    }
+
+    section > p{
+        font-size: 15px;
+    }
+}
