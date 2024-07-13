@@ -4,10 +4,10 @@ A sample dashboard displaying statistics of EV market in Inida (2022). Visit the
 
 ## Root Project Folder
 
-In the terminal navigate to StockReport/dashboard, run:
+In the terminal navigate to dashboard folder, run:
 
 
-### `cd StockReport/dashboard`
+### `cd dashboard`
 
 ## Install dependencies
 Run the command: 
