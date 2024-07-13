@@ -17,7 +17,9 @@
 .cards{
     flex: 1;
     /* width: 50% !important; */
-    background-color: #212953 !important;
+    /* background-color: #1f1f20 !important; */
+    background: inherit !important;
+    border: 1px solid silver;
     border-radius: 15px !important;
     scale: 0.97;
     transition: all 0.3s ease-in-out;
@@ -34,6 +36,11 @@
 }
 
 .css-1qvr50w-MuiTypography-root{
+
+    @media screen and (max-width:480px) {
+        font-size: 18px !important;
+    }
+
     @media only screen and (min-width: 951px) and (max-width:1200px){
         font-size: 10px !important;
     }
@@ -51,6 +58,9 @@
         font-size: 12px;
     }
 
+    @media screen and (min-width:481px) and (max-width:950px){
+        font-size: 15px;
+    }
 }
 
 .report-summary{
@@ -104,42 +114,57 @@
     }
 }
 
+.circleSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    text-decoration: none;
 
-.MuiChartsLegend-series > text{
-    fill: whitesmoke !important;
-    
-}
-
-.MuiChartsAxis-label > text{
-    fill: whitesmoke !important;
-}
-
-@media screen and (max-width:480px){
-
-    section > h2{
-        font-size: 18px;
-        text-align: center;
-        width: 100%;
+    @media screen and (max-width:480px) {
+        gap: 4rem;
     }
 
-    section > p{
+}
+
+.circle {
+    width: 130px; 
+    height: 130px;
+    background-color: rgba(54, 162, 235, 0.2); 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
+    word-wrap: "word-break";
+
+    @media screen and (max-width:480px) {
         font-size: 12px;
     }
 
-    .css-1fge5n-MuiChartsSurface-root{
-        width: 500px !important;
-    }
-}
-
-@media screen and (min-width:481px) and (max-width:950px){
-    section > h2{
-        font-size: 20px;
-        text-align: center;
-        width: 100%;
-        
+    @media screen and (min-width:481px) and (max-width:950px){
+        font-size: 12px;
     }
 
-    section > p{
-        font-size: 15px;
+    &.blue{
+        border: 2px solid rgba(54, 162, 235, 1);
+        background-color: rgba(54, 162, 235, 0.2);
     }
-}
+
+    &.orange{
+        border: 2px solid #f0691b;
+        background-color: rgba(207, 115, 53, 0.2);
+    }
+
+    &.red{
+        border: 2px solid #bc13ff;
+        background-color: rgba(119, 16, 187, 0.2);
+    }
+
+    &.green{
+        border: 2px solid #5fc04b;
+        background-color: rgba(75, 192, 81, 0.2);
+    }
+  }
+  

@@ -6,11 +6,11 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <h1>StockX</h1>
+        <h1>StatsX</h1>
       </div>
       <div className="userInfo">
-        <h3>Hi, John</h3>
-        <AccountCircleIcon fontSize={"large"} zzz />
+        <h4>Hi, John</h4>
+        <AccountCircleIcon fontSize={"large"} />
       </div>
     </header>
   );

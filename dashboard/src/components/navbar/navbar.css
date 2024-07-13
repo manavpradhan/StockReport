@@ -1,10 +1,12 @@
 .navbar {
     width: 15%;
     height: calc(100vh - 60px);
-    background-color: #14133b;
+    background: rgb(0,0,0);
+    background: linear-gradient(173deg, rgb(31, 30, 30) 12%, rgb(99, 62, 8) 100%);
     color: whitesmoke;
     position: relative;
-    
+    backdrop-filter: blur(20px);
+
     @media screen and (max-width:480px) {
         display: none;
     }
@@ -17,7 +19,8 @@
 .navbar-active{
     width: 70%;
     height: calc(100vh - 60px);
-    background-color: #14133b;
+    background: rgb(0,0,0);
+    background: linear-gradient(173deg, rgba(0,0,0,1) 12%, rgba(129,80,9,1) 100%);
     color: whitesmoke;
     position: absolute;
     top: 60px;
@@ -95,8 +98,8 @@
 }
 
 .link:hover{
-    background-color: #242164;
-    
+    background-color: #fc7425a4;
+    color: black;
 }
 
 .logout{
@@ -119,9 +122,9 @@
 }
 
 .active{
-    background-color: #383574;
+    background-color: #E3651D;
     scale: 1.2;
-    
+    color: black;
 }
 
 
